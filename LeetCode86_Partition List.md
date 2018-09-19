@@ -1,10 +1,6 @@
-# Partition List
-
----
+# Partition List(LeetCode 86)
 
 ## Description
-
----
 
 Given a linked list and a value *x*, partition it such that all nodes less than *x* come before nodes greater than or equal to *x*.
 
@@ -17,11 +13,7 @@ Input: head = 1->4->3->2->5->2, x = 3
 Output: 1->2->2->4->3->5
 ```
 
-
-
 ## Solution
-
----
 
 将链表分成两个部分，分别是小于x的和大于等于x的。这两个部分的头节点都不一定非NULL，考虑使用两个dummy节点(dummyLeft & dummyRight), 分别用于保存两部分链表。在遍历原来的链表并且构建完两部分链表后，需要连接两部分链表得到结果，所以还需要保存两个链表的头(这里使用left_head & right_head)。
 
@@ -29,13 +21,9 @@ Output: 1->2->2->4->3->5
 
 ## Complexity
 
----
-
 只需要遍历一遍链表，所以复杂度为O(n)
 
 ## Code(C++)
-
----
 
 ```c++
 /**
